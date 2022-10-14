@@ -46,11 +46,18 @@ public class Day4 {
               //code
           }
           */
+
+
 Integer count=0; //count =0
-          while(count<5){//true,true,true,true,true,false
+if(count<5){
+    system.debug('sanket');
+    count++;//1,2,3,,4,5,
+}
+          while(count<5){//true,true
               system.debug('sanket');
-              count++; //count =1,2,3,4,5
+              count++;//1,2,3,,4,5,
           }
+
 integer i=0;//0
           while(i<10){//0(true),6(true),12(false)
               system.debug('hello'); //1st time,3rd time
@@ -60,4 +67,60 @@ integer i=0;//0
 
 
     }
+
+
 }
+
+/*
+2.Do-while :
+
+exit controlled
+
+syntax:
+do{
+//loop body
+
+}while(<condition>);
+*/
+
+public static void doWhileLoop(){
+    Integer count=10;
+Do{
+    system.debug('sanket');
+    count++;
+}while (count<5); 
+    
+//write a code to print odd numbers between 1 to 100
+Integer number1=1;
+do{
+    system.debug(number1);
+number1+=2;
+}while (number1<100) ;
+    
+
+
+}
+
+/**
+ * 
+ * for:
+ * pre checking interative statement
+ * 
+ * sytax:
+ * for(<initialization>;<condition>;<action>){
+ * //body
+ * }
+ */
+
+ public static void forLoops(){
+    Integer count=0;
+     for(;count<5;){
+        system.debug('sanket');
+       count+=2;
+     }
+     
+     System.debug(count);
+ }
+
+}
+
