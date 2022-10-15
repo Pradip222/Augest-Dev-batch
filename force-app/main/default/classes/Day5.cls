@@ -49,5 +49,7 @@ public  class Day5 {
 
 
     }
+    day6.number1=1;
+    System.debug(day6.number1);
 
 }
