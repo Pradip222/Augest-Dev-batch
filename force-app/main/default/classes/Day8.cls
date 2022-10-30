@@ -47,6 +47,7 @@ public with sharing class Day8 {
     a.name='account with contact';
     a.active__c='yes';
     insert a;
+    
     system.debug(a.id);
           contact c=new contact();
           c.LastName='mycontact';
