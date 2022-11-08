@@ -29,21 +29,38 @@ public with sharing class Day9 {
     5.element get(index) : return element at specified index
     6.boolean IsEmpty() : rturn true if list is empty
     7. integer size() : return number of elements in collection
+    8. integer indexOf(element);
+    9.clone(); complete copy of collection
+    10.void remove(<index>);//remove element at specified index from list
+    11.void sort(); //order the list in acending order
+    12. void set(index,element) //replace value at specified index
     */
 
     list<integer> numberList= new List<Integer>(); //creating a list of numbers
     system.debug(numberList);
     system.debug(numberList.isEmpty());
-    numberList.add(1); //0
+    numberList.add(2); //0
     system.debug(numberList);
     system.debug(numberList.isEmpty());
-    numberList.add(2); //1
+    numberList.add(3); //1
     system.debug(numberList);
-    numberList.add(3); //2
+    numberList.add(1); //2
     system.debug(numberList);
-    numberList.add(1); //3
+    numberList.add(4); //3
     system.debug(numberList);
+    numberList.sort();
+    system.debug(numberList);
+    numberList.remove(3);
+    System.debug(numberList);
+    numberList.set(1,4);
+    System.debug(numberList);
     numberList.add(3,4);
+    list<Integer> numberList2= numberList.clone();
+    numberList2.add(50);
+    System.debug(numberList2);
+    system.debug(numberList);
+    system.debug(numberList.indexOf(4)); //if element is present in the list indexOf method will return index
+    system.debug(numberList.indexOf(100)); //if element is not present in the list indexOf method will retun -1
     system.debug(numberList);
     system.debug(numberList.get(3));
     System.debug(numberList.contains(2));
