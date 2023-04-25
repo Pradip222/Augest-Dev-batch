@@ -53,5 +53,10 @@ public class day19 {
     10.trigger.newMAP
 
 
+    write trigger to prevent deletion of account if has contacts associated with it
+
+    1.object = account
+    2.before delete
+    3.
      */
 }

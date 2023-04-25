@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Hello" icon-name="standard:account">
+        <div >
+       <lightning-input type="checkbox"
+       label="Show Details"
+       onchange={handleChange}>
+    
+    </lightning-input>
+        </div>
+        <div class="slds-var-m-vertical_meadium">
+            <template lwc:if={areDetailsVisible}> these are the details! </template>
+            <template lwc:else> not showing details</template>
+        </div>
+    </lightning-card>
+</template>
