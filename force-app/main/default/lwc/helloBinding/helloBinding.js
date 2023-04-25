@@ -1,7 +1,7 @@
 import { LightningElement } from 'lwc';
 
 export default class HelloBinding extends LightningElement {
-    greeting='data';
+    greeting='pradip';
     handleChange(event){
         this.greeting=event.target.value;
     }

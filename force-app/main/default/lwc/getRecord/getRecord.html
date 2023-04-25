@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Show Record" icon-name="custom:custom67">
+        <template lwc:if={user.data}>
+            <P>ID:{userId}</P>
+            <P>Name: {name}</P>
+            <p>
+                <lightning-formatted-email value={email}></lightning-formatted-email>
+            </p>
+        </template>
+    </lightning-card>
+</template>
