@@ -10,6 +10,7 @@ export default class GetRecord extends LightningElement {
    
     @wire(getRecord,{recordId:'$userID',fields})
     user;
+    
 
     get name(){
         console.log('getting name');
