@@ -1,7 +1,7 @@
-import { LightningElement } from 'lwc';
+import { LightningElement,track } from 'lwc';
 
 export default class HelloForEach extends LightningElement {
-
+    @track //track changes (depth of reactivity)
     contacts=[
         {
             Id:"123",
@@ -19,6 +19,19 @@ export default class HelloForEach extends LightningElement {
             Title:'Director'
         },
 
-    ]
-    
+    ];
+    handleClick(event){
+
+        var obj= {
+            Id:"",
+            Name:"",
+            Title:''
+        };
+        obj.Id=this.template.querySelectorAll('lightning-input')[1].value; //selectors
+        obj.Name=this.template.querySelectorAll('lightning-input')[0].value;
+        obj.Title=this.template.querySelectorAll('lightning-input')[2].value;
+        this.contacts.push(obj);
+        console.log(this.contacts); //writing to console
+
+    }
 }

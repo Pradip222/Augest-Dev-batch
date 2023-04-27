@@ -6,13 +6,14 @@
                 <li key={contact.Id}>{contact.Name}, {contact.Title} </li>
             </template>
         </ul>
+        <lightning-input label="Name"></lightning-input>
+        <lightning-input label="Id"></lightning-input>
+        <lightning-input label="Title"></lightning-input>
+        <div></div>
+        <lightning-button onclick={handleClick} label="Add Contact"></lightning-button>
+       
 
-        <lightning-input title="Name" >
-
-        </lightning-input>
-        <lightning-input title="Title"></lightning-input>
-
-        <lightning-button></lightning-button>
+     
 
     </lightning-card>
 </template>
