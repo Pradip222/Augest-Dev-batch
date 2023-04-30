@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Get Contacts based on input" icon-name="custom:custom14">
+        <div class="slds-var-m-around_medium">
+            <p class="slds-var-m-bottom_small">
+                <lightning-input onchange={handleChange} label="Enter the name"></lightning-input>
+                <lightning-button label="Get Contacts" onclick={handleClick}></lightning-button>
+
+            </p>
+
+        </div>
+        <template if:true={contacts}>
+            <template for:each={contacts} for:item="contact">
+                <p key={contact.Id}>{contact.LastName}</p>
+            </template>
+        </template>
+
+    </lightning-card>
+</template>
